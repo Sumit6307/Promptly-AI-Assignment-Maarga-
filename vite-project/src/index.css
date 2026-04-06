@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --color-maarga-bg: #F5F0E9;
+  --color-maarga-text: #2D2D2D;
+  --color-maarga-accent: #B8860B;
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-maarga-bg);
+    color: var(--color-maarga-text);
+    font-family: var(--font-sans);
+  }
+}
