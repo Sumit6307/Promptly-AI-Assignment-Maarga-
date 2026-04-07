@@ -2,7 +2,9 @@
 
 @theme {
   --color-maarga-bg: #F5F0E9;
+  --color-maarga-hero-bg: #FDF9F5;
   --color-maarga-text: #2D2D2D;
+  --color-maarga-brand: #21273D;
   --color-maarga-accent: #B8860B;
   --font-serif: "Playfair Display", serif;
   --font-sans: "Inter", sans-serif;

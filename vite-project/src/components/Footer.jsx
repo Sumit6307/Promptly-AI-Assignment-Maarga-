@@ -4,26 +4,26 @@ const Footer = () => {
   return (
     <footer
       style={{
-        background: '#EDE8E1',
-        minHeight: '60vh',
+        background: '#F5F0E9',
+        minHeight: '50vh',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        padding: '64px 24px',
+        padding: '80px 24px',
       }}
     >
       <div
         style={{
           width: '100%',
-          maxWidth: '720px',
-          background: '#F5EFE6',
-          borderRadius: '24px',
-          boxShadow: '0 2px 24px rgba(180,160,130,0.10)',
+          maxWidth: '650px',
+          background: '#FDF9F5',
+          borderRadius: '16px',
+          boxShadow: '0 4px 30px rgba(0,0,0,0.03)',
           display: 'flex',
           flexDirection: 'row',
           overflow: 'hidden',
-          minHeight: '280px',
+          minHeight: '300px',
           position: 'relative',
         }}
       >
@@ -147,19 +147,6 @@ const Footer = () => {
         </div>
       </div>
 
-      <div
-        style={{
-          marginTop: '36px',
-          color: 'rgba(45,45,45,0.22)',
-          fontSize: '11px',
-          letterSpacing: '0.45em',
-          fontWeight: 700,
-          textTransform: 'uppercase',
-          fontFamily: 'sans-serif',
-        }}
-      >
-        MAARGA
-      </div>
     </footer>
   );
 };

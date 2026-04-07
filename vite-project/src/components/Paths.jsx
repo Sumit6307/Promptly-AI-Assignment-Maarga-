@@ -2,7 +2,7 @@ import React from "react";
 
 const Paths = () => {
   return (
-    <section className="relative bg-[#F5F0E9] py-28 px-6 md:px-16 lg:px-24 overflow-hidden">
+    <section className="relative bg-[#F5F0E9] py-16 px-6 md:px-16 lg:px-24 overflow-hidden">
 
       <div className="absolute inset-0 flex justify-end items-center pointer-events-none z-0">
         <div className="relative w-[600px] md:w-[750px] lg:w-[900px] h-full">
@@ -18,31 +18,33 @@ const Paths = () => {
         </div>
       </div>
 
-      <div className="absolute top-8 right-8 md:top-12 md:right-14 z-20">
+      <div className="absolute top-8 right-6 md:top-14 md:right-16 z-20">
         <img
           src="/logo-assignment.png"
           alt="Maarga Logo"
-          className="w-[210px] h-[210px] md:w-[230px] md:h-[230px] object-contain"
+          className="w-[180px] h-[180px] md:w-[210px] md:h-[210px] object-contain opacity-95 transition-all duration-700"
           style={{ mixBlendMode: 'multiply' }}
         />
       </div>
 
       <div className="relative z-10 max-w-6xl">
 
-        <h2 className="font-serif text-[#2D3142] text-3xl md:text-5xl mb-6">
+        <h2 className="font-serif text-[#2D3142] text-3xl md:text-[40px] mb-6 leading-tight">
           The Two Paths Of Maharashtra
         </h2>
 
-        <div className="text-[#2D3142]/70 text-sm md:text-base leading-relaxed mb-16 max-w-[520px] space-y-4">
+        <div className="text-[#2D3142]/85 text-sm md:text-[15px] leading-[1.8] mb-12 max-w-[540px] space-y-4 font-light">
           <p>
             MAARGA offers two complementary spiritual paths in Maharashtra.
+            <br />
             Each is complete in itself, and together they form a deeper arc of inner balance.
           </p>
           <p>
             One honours Shiva, the stillness of consciousness.
+            <br />
             The other honours Shakti, the living force of energy.
           </p>
-          <p>Each path is curated with the same care.</p>
+          <p className="italic opacity-80">Each path is curated with the same care.</p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-16 max-w-4xl relative">
