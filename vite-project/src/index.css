@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 @theme {
-  --color-maarga-bg: #F5F0E9;
-  --color-maarga-hero-bg: #FDF9F5;
+  --color-maarga-bg: #F7F2EE;
+  --color-maarga-hero-bg: #FDF9F6;
   --color-maarga-text: #2D2D2D;
-  --color-maarga-brand: #21273D;
-  --color-maarga-accent: #B8860B;
+  --color-maarga-brand: #1A1A1A;
+  --color-maarga-accent: #C5A070;
   --font-serif: "Playfair Display", serif;
   --font-sans: "Inter", sans-serif;
 }

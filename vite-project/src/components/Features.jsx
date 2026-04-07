@@ -21,27 +21,26 @@ const Features = () => {
   ];
 
   return (
-    <section className="relative bg-[#F5F0E9] overflow-hidden py-16 px-6 md:px-16 lg:px-24">
+    <section className="relative bg-[#F7F2EE] overflow-hidden py-24 px-6 md:px-16 lg:px-24">
 
       <div className="absolute inset-0 flex justify-end items-center pointer-events-none z-0">
-        <div className="relative w-[500px] md:w-[620px] lg:w-[700px] h-full">
+        <div className="relative w-[500px] md:w-[620px] lg:w-[800px] h-full">
           <img
             src="/Image-3.png"
             alt="Temple"
-            className="w-full h-full object-contain object-right mix-blend-multiply opacity-45"
+            className="w-full h-full object-contain object-right mix-blend-multiply opacity-50 sepia-[0.3]"
           />
-          <div className="absolute inset-y-0 left-0 w-[50%] bg-gradient-to-r from-[#F5F0E9] via-[#F5F0E9]/80 to-transparent pointer-events-none" />
-          <div className="absolute inset-x-0 top-0 h-[20%] bg-gradient-to-b from-[#F5F0E9] to-transparent pointer-events-none" />
-          <div className="absolute inset-x-0 bottom-0 h-[20%] bg-gradient-to-t from-[#F5F0E9] to-transparent pointer-events-none" />
-          <div className="absolute inset-y-0 right-0 w-[5%] bg-gradient-to-l from-[#F5F0E9] to-transparent pointer-events-none" />
+          <div className="absolute inset-y-0 left-0 w-[55%] bg-gradient-to-r from-[#F7F2EE] via-[#F7F2EE]/80 to-transparent pointer-events-none" />
+          <div className="absolute inset-x-0 top-0 h-[25%] bg-gradient-to-b from-[#F7F2EE] to-transparent pointer-events-none" />
+          <div className="absolute inset-x-0 bottom-0 h-[25%] bg-gradient-to-t from-[#F7F2EE] to-transparent pointer-events-none" />
         </div>
       </div>
 
-      <div className="absolute top-8 right-6 md:top-14 md:right-16 z-20">
+      <div className="absolute top-8 right-6 md:top-12 md:right-16 z-20">
         <img
           src="/logo-assignment.png"
           alt="Maarga Logo"
-          className="w-[180px] h-[180px] md:w-[210px] md:h-[210px] object-contain opacity-95 transition-all duration-700"
+          className="w-[180px] h-[180px] md:w-[200px] md:h-[200px] object-contain opacity-90 transition-transform duration-700 hover:scale-105"
           style={{ mixBlendMode: 'multiply' }}
         />
       </div>
@@ -49,11 +48,14 @@ const Features = () => {
       <div className="relative z-10 max-w-7xl mx-auto flex">
         <div className="max-w-[580px]">
 
-          <h2 className="font-serif text-[#2D3142] text-3xl md:text-[40px] mb-8 leading-tight">
-            How Maarga is Different
-          </h2>
+          <div className="relative inline-block mb-10">
+            <h2 className="font-serif text-[#1A1A1A] text-3xl md:text-[42px] leading-tight mb-2">
+              How Maarga is Different
+            </h2>
+            <div className="w-48 h-[0.5px] bg-[var(--color-maarga-accent)]" />
+          </div>
 
-          <div className="text-[#2D3142]/85 text-sm md:text-[15px] leading-[1.8] mb-12 max-w-[440px] space-y-5 font-light">
+          <div className="text-[#1A1A1A]/80 text-sm md:text-[15px] leading-[1.8] mb-16 max-w-[440px] space-y-6 font-light">
             <p>
               MAARGA is not designed as a tour.
               <br />
@@ -65,13 +67,13 @@ const Features = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 gap-x-12 gap-y-14 max-w-[520px]">
+          <div className="grid grid-cols-2 gap-x-16 gap-y-16 max-w-[560px]">
             {features.map((f, i) => (
-              <div key={i} className="space-y-3">
-                <h3 className="font-serif text-[#C29C6C] text-lg tracking-wide">
+              <div key={i} className="space-y-4">
+                <h3 className="font-serif text-[var(--color-maarga-accent)] text-[17px] tracking-wide">
                   {f.title}
                 </h3>
-                <p className="text-[#2D3142]/70 text-sm leading-relaxed">
+                <p className="text-[#1A1A1A]/75 text-sm leading-relaxed font-light">
                   {f.desc}
                 </p>
               </div>
