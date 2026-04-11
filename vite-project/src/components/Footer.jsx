@@ -134,8 +134,7 @@ const Footer = () => {
 
           <p
             style={{
-              color: '#1A1A1A',
-              opacity: 0.4,
+              color: 'rgba(26,26,26,0.4)',
               fontSize: '11px',
               textAlign: 'center',
               letterSpacing: '0.04em',
@@ -145,7 +144,7 @@ const Footer = () => {
             Shared With Care From{' '}
             <a
               href="mailto:hello@maarga.co"
-              style={{ color: '#C5A070', textDecoration: 'none' }}
+              style={{ color: '#B59060', textDecoration: 'none', fontWeight: 600, fontSize: '12px' }}
             >
               hello@maarga.co
             </a>

@@ -1,24 +1,16 @@
 import React from "react";
+import SectionWrapper from "./SectionWrapper";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center bg-[var(--color-maarga-hero-bg)] overflow-hidden">
+    <SectionWrapper className="min-h-screen flex items-center bg-[var(--color-maarga-hero-bg)]">
       
       <div className="absolute inset-0 z-0 flex justify-end items-center pointer-events-none overflow-hidden">
         <img
           src="/Image-1.png"
           alt="Temple Sketch"
           className="w-[140%] md:w-[110%] lg:w-[100%] h-full object-cover md:object-contain md:object-right opacity-70 mix-blend-multiply transition-opacity duration-700"
-        />
-      </div>
-
-
-      <div className="absolute top-8 right-6 md:top-12 md:right-16 z-20">
-        <img
-          src="/logo-assignment.png"
-          alt="Maarga Logo"
-          className="w-[180px] h-[180px] md:w-[200px] md:h-[200px] object-contain opacity-90 transition-transform duration-700 hover:scale-105"
-          style={{ mixBlendMode: 'multiply' }}
+          style={{ maskImage: 'radial-gradient(ellipse at center, black 50%, transparent 80%)', WebkitMaskImage: 'radial-gradient(ellipse at center, black 50%, transparent 80%)' }}
         />
       </div>
 
@@ -42,7 +34,7 @@ const Hero = () => {
           </button>
         </div>
       </div>
-    </section>
+    </SectionWrapper>
   );
 };
 

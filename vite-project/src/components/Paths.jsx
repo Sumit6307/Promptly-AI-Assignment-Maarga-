@@ -1,8 +1,9 @@
 import React from "react";
+import SectionWrapper from "./SectionWrapper";
 
 const Paths = () => {
   return (
-    <section className="relative bg-[#F7F2EE] py-24 px-6 md:px-16 lg:px-24 overflow-hidden">
+    <SectionWrapper className="bg-[#F7F2EE] py-24 px-6 md:px-16 lg:px-24">
 
       <div className="absolute inset-0 flex justify-end items-center pointer-events-none z-0">
         <div className="relative w-[600px] md:w-[750px] lg:w-[900px] h-full">
@@ -10,21 +11,9 @@ const Paths = () => {
             src="/Image-7.png"
             alt="Temple"
             className="w-full h-full object-contain object-right mix-blend-multiply opacity-50 sepia-[0.2]"
+            style={{ maskImage: 'radial-gradient(ellipse at center, black 50%, transparent 80%)', WebkitMaskImage: 'radial-gradient(ellipse at center, black 50%, transparent 80%)' }}
           />
-          <div className="absolute inset-y-0 left-0 w-[50%] bg-gradient-to-r from-[#F7F2EE] via-[#F7F2EE]/70 to-transparent pointer-events-none" />
-          <div className="absolute inset-x-0 top-0 h-[25%] bg-gradient-to-b from-[#F7F2EE] to-transparent pointer-events-none" />
-          <div className="absolute inset-x-0 bottom-0 h-[25%] bg-gradient-to-t from-[#F7F2EE] to-transparent pointer-events-none" />
-          <div className="absolute inset-y-0 right-0 w-[5%] bg-gradient-to-l from-[#F7F2EE] to-transparent pointer-events-none" />
         </div>
-      </div>
-
-      <div className="absolute top-8 right-6 md:top-12 md:right-16 z-20">
-        <img
-          src="/logo-assignment.png"
-          alt="Maarga Logo"
-          className="w-[180px] h-[180px] md:w-[200px] md:h-[200px] object-contain opacity-90 transition-transform duration-700 hover:scale-105"
-          style={{ mixBlendMode: 'multiply' }}
-        />
       </div>
 
       <div className="relative z-10 max-w-6xl">
@@ -51,7 +40,7 @@ const Paths = () => {
 
           <div className="hidden md:block absolute left-1/2 top-0 h-full w-[0.5px] bg-[var(--color-maarga-accent)]/20" />
 
-          <div className="pr-6 md:pr-12 space-y-6">
+          <div className="md:pr-12 space-y-6">
             <div>
               <h3 className="font-serif text-[#1A1A1A] text-2xl md:text-3xl mb-3">
                 The Shaiva Path
@@ -71,7 +60,7 @@ const Paths = () => {
             </div>
           </div>
 
-          <div className="pl-6 md:pl-12 space-y-6">
+          <div className="md:pl-12 space-y-6 mt-12 md:mt-0">
             <div>
               <h3 className="font-serif text-[#1A1A1A] text-2xl md:text-3xl mb-3">
                 The Shakta Path
@@ -93,7 +82,7 @@ const Paths = () => {
 
         </div>
       </div>
-    </section>
+    </SectionWrapper>
   );
 };
 

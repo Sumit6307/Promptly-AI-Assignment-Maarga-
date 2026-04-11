@@ -1,17 +1,9 @@
 import React from "react";
+import SectionWrapper from "./SectionWrapper";
 
 const Upcoming = () => {
   return (
-    <section className="relative bg-[#F7F2EE] py-24 pb-0 px-6 flex flex-col items-center text-center overflow-hidden">
-
-      <div className="absolute top-8 right-6 md:top-12 md:right-16 z-20">
-        <img
-          src="/logo-assignment.png"
-          alt="Maarga Logo"
-          className="w-[180px] h-[180px] md:w-[200px] md:h-[200px] object-contain opacity-90 transition-transform duration-700 hover:scale-105"
-          style={{ mixBlendMode: 'multiply' }}
-        />
-      </div>
+    <SectionWrapper className="bg-[#F7F2EE] py-24 pb-0 px-6 flex flex-col items-center text-center overflow-hidden">
 
       <div className="relative z-10 max-w-[520px] flex flex-col items-center">
 
@@ -41,7 +33,7 @@ const Upcoming = () => {
           <img
             src="/Image-5.png"
             alt="Temple Bell"
-            className="w-full object-contain mix-blend-multiply opacity-50"
+            className="w-full object-contain mix-blend-multiply contrast-[1.1] brightness-[1.1] opacity-50"
           />
           <div className="absolute bottom-0 left-0 right-0 h-[65%] bg-gradient-to-t from-[#F7F2EE] via-[#F7F2EE]/80 to-transparent pointer-events-none" />
           <div className="absolute top-0 left-0 right-0 h-[25%] bg-gradient-to-b from-[#F7F2EE] to-transparent pointer-events-none" />
@@ -53,7 +45,7 @@ const Upcoming = () => {
         </span>
       </div>
 
-    </section>
+    </SectionWrapper>
   );
 };
 

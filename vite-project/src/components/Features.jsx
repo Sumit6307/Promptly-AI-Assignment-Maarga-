@@ -1,4 +1,5 @@
 import React from "react";
+import SectionWrapper from "./SectionWrapper";
 
 const Features = () => {
   const features = [
@@ -21,7 +22,7 @@ const Features = () => {
   ];
 
   return (
-    <section className="relative bg-[#F7F2EE] overflow-hidden py-24 px-6 md:px-16 lg:px-24">
+    <SectionWrapper className="bg-[#F7F2EE] py-24 px-6 md:px-16 lg:px-24">
 
       <div className="absolute inset-0 flex justify-end items-center pointer-events-none z-0">
         <div className="relative w-[500px] md:w-[620px] lg:w-[800px] h-full">
@@ -29,20 +30,9 @@ const Features = () => {
             src="/Image-3.png"
             alt="Temple"
             className="w-full h-full object-contain object-right mix-blend-multiply opacity-50 sepia-[0.3]"
+            style={{ maskImage: 'radial-gradient(ellipse at center, black 50%, transparent 80%)', WebkitMaskImage: 'radial-gradient(ellipse at center, black 50%, transparent 80%)' }}
           />
-          <div className="absolute inset-y-0 left-0 w-[55%] bg-gradient-to-r from-[#F7F2EE] via-[#F7F2EE]/80 to-transparent pointer-events-none" />
-          <div className="absolute inset-x-0 top-0 h-[25%] bg-gradient-to-b from-[#F7F2EE] to-transparent pointer-events-none" />
-          <div className="absolute inset-x-0 bottom-0 h-[25%] bg-gradient-to-t from-[#F7F2EE] to-transparent pointer-events-none" />
         </div>
-      </div>
-
-      <div className="absolute top-8 right-6 md:top-12 md:right-16 z-20">
-        <img
-          src="/logo-assignment.png"
-          alt="Maarga Logo"
-          className="w-[180px] h-[180px] md:w-[200px] md:h-[200px] object-contain opacity-90 transition-transform duration-700 hover:scale-105"
-          style={{ mixBlendMode: 'multiply' }}
-        />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto flex">
@@ -82,7 +72,7 @@ const Features = () => {
 
         </div>
       </div>
-    </section>
+    </SectionWrapper>
   );
 };
 
