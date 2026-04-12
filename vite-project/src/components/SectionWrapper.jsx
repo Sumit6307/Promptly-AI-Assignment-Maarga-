@@ -15,6 +15,7 @@ const SectionWrapper = ({ children, className = '', id, hideLogo = false }) => {
       )}
       {children}
     </section>
+    
   );
 };
 
